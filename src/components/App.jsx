@@ -20,7 +20,7 @@ class App extends Component {
 
   fetchImages = () => {
     const { query, page } = this.state;
-    const API_KEY = '40728450-e65c4b62446cf65c4bf21b685'; // Замініть на ваш ключ
+    const API_KEY = '40728450-e65c4b62446cf65c4bf21b685';
     const url = `https://pixabay.com/api/?key=${API_KEY}&q=${query}&page=${page}&per_page=12`;
 
     this.setState({ isLoading: true });
